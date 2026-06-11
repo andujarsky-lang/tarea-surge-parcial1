@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipeline DevOps | Sky</title>
+    <style>
+        /* Estilos generales y paleta moderna */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Tarjeta principal */
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 40px;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        }
+
+        /* Títulos y textos */
+        h1 {
+            color: #58a6ff;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            color: #8b949e;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* Insignia de estado */
+        .status-badge {
+            display: inline-block;
+            background-color: rgba(46, 160, 67, 0.15);
+            color: #3fb950;
+            border: 1px solid rgba(46, 160, 67, 0.4);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .status-badge::before {
+            content: "●";
+            margin-right: 6px;
+            color: #3fb950;
+        }
+
+        /* Lista de tecnologías */
+        .tech-stack {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tech-item {
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="status-badge">Pipeline Activo y En Línea</div>
+        <h1>Proyecto DevOps</h1>
+        <p>Esta página web es el resultado de un despliegue automatizado. Cada vez que el código fuente se actualiza en la rama principal, el pipeline se ejecuta y publica esta versión en tiempo real.</p>
+        
+        <div class="tech-stack">
+            <span class="tech-item">🚀 GitHub Actions</span>
+            <span class="tech-item">⚡ Surge.sh</span>
+            <span class="tech-item">📦 Node.js</span>
+            <span class="tech-item">🌐 HTML/CSS</span>
+        </div>
+    </div>
+
+</body>
+</html>
