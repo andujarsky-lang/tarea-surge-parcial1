@@ -13,8 +13,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Surge
-        run: npm install -g surge
+      - name: Instalar dependencias
+        run: npm install -g surge htmlhint
+
+      - name: Ejecutar prueba unitaria de HTML (QA)
+        run: htmlhint "**/*.html"
 
       - name: Deploy to Surge
         run: surge ./ sky-devops-tarea-surge-2026.surge.sh --token ${{ secrets.SURGE_TOKEN }}
